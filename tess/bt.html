@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="navbar">
+        <div>
+          <a href="#">Navbar</a>
+          <a href="#">Home</a>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">About</a>
+        </div>
+        <div>
+          <input type="text" placeholder="Search" />
+          <button>Search</button>
+        </div>
+      </div> 
+   <div class="coupleC"> 
+    <button  onclick=" openAdd()" id="openModalBtn">+ Thêm sản phẩm</button>
+    <input type="text" id="searchInput" placeholder="nhap ten muon tim kiem">
+    <button onclick="searchProduct()">  Search </button>
+
+   </div>
+      
+   <table >
+   <thead>
+    <tr> 
+      <th>#</th>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Image</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Stock</th>
+      <th>Actions</th>
+    </tr>
+   </thead>
+     <tbody id="tbody"> 
+
+   </tbody>
+
+   </table>
+
+   <div id="addProductModal">
+    <h3>Thêm sản phẩm</h3>
+    <form id="productForm">
+      <input type="text" id="productId" placeholder="Product ID" required><br>
+      <input type="text" id="productName" placeholder="Product Name" required><br>
+      <input type="text" id="productImage" placeholder="Product Image URL" required><br>
+      <textarea id="productDescription" placeholder="Product Description" required></textarea><br>
+      <input type="number" id="productPrice" placeholder="Product Price" required><br>
+      <input type="number" id="productStock" placeholder="Product Stock" required><br>
+      <button onclick ="addProducts(event)"  type="submit">Add</button>
+      <button onclick="closeAdd()" type="button" id="closeModalBtn">Cancel</button>
+    </form>
+  </div>
+  <div id="editProductModal">
+    <h3>Chỉnh sửa sản phẩm</h3>
+    <form id="editProductForm">
+      <input type="text" id="editProductId" disabled><br>
+      <input type="text" id="editProductName" placeholder="Product Name" required><br>
+      <input type="text" id="editProductImage" placeholder="Product Image URL" required><br>
+      <textarea id="editProductDescription" placeholder="Product Description" required></textarea><br>
+      <input type="number" id="editProductPrice" placeholder="Product Price" required><br>
+      <input type="number" id="editProductStock" placeholder="Product Stock" required><br>
+      <button type="submit">Update</button>
+      <button type="button" id="closeEditModalBtn">Cancel</button>
+    </form>
+  </div>
+    
+   <script src="index.js"> </script>
+</body>
+</html>

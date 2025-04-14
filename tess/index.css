@@ -1,0 +1,47 @@
+.navbar {
+    background-color: #1d4ed8;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  .navbar button {
+    background-color: #5178eb;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .navbar .text {
+    border-radius: 50%;
+  }
+  .coupleC{
+    gap: 10px;
+    margin: 50px;
+    display: flex;
+    justify-content:space-between;
+  }
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  th, td {
+    border: 1px solid #320a0a;
+    padding: 10px;
+    text-align: center;
+  }
+  #addProductModal , #editProductModal{
+    width: 200px;
+    background-color: rgb(98, 119, 206);
+    position: relative;
+    left: 45%;
+    padding: 40px;
+    display: none;
+  }
